@@ -1,6 +1,6 @@
 // –– GRID
 
-$jb-grid_gutter: 15px;
+$jb-grid_gutter: 15px !default;
 
 .jb-grid {
     display: grid;

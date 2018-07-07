@@ -7,8 +7,12 @@ This is not a complete grid, but, like other juicebox repos, is a lightweight pr
 ## Installing
 `npm install @juiceboxes/juice-grid`
 
-### import the CSS
-`@import 'node_modules/@juiceboxes/juice-grid/juice-grid.css'`
+### Imports
+Regular CSS: `@import 'node_modules/@juiceboxes/juice-grid/juice-grid.css'`
+
+Minified CSS: `@import 'node_modules/@juiceboxes/juice-grid/juice-grid.min.css'`
+
+SCSS with Variable declarations: `@import 'node_modules/@juiceboxes/juice-grid/juice-grid.scss'`
 
 ## Useage
 
@@ -23,6 +27,9 @@ This is not a complete grid, but, like other juicebox repos, is a lightweight pr
 ```
 
 ### With Gutters
+
+Before your import of the `.scss` file, declare your `$jb-grid_gutter` variable. Otherwise, the default is `15px`.
+
 ``` html
 <div class="jb-grid with-gutters">
     .
