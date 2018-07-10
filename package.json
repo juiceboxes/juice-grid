@@ -1,6 +1,6 @@
 {
   "name": "@juiceboxes/juice-grid",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "private": false,
   "description": "A lightweight, simple, grid system using CSS Grid OR flexbox",
   "main": "index.js",
