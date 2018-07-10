@@ -1,20 +1,41 @@
 // –– GRID
 
-$jb-grid_gutter: 15px !default;
+$grid-gutter: 15px !default;
 
-.jb-grid {
+.grid, .grid-flex {
+    .row {
+        &:last-of-type { margin-bottom: $grid-gutter; }
+        & > * {
+            display: block;
+            padding: 10px;
+        }
+    }
+}
+
+.grid {
     display: grid;
     margin: 0 auto;
-    &.has-gutters { grid-gap: $jb-grid_gutter; }
+    &.with-gutters { grid-gap: $grid-gutter; }
+    .row {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: $grid-gutter;
+      }
+      @for $i from 1 through 12 {
+        .push-#{$i} { grid-column-start: #{$i + 1}; }
+        .col-#{$i} { grid-column-end: span #{$i}; }
+    }
 }
 
-.jb-row {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-gap: $jb-grid_gutter;
-}
-
-@for $i from 1 through 12 {
-    .jb-push-#{$i} { grid-column-start: #{$i + 1}; }
-    .jb-col-#{$i} { grid-column-end: span #{$i}; }
+.grid-flex {
+    &.with-gutters { .col + .col { margin-left: $grid-gutter; } }
+    .row {
+    display: flex;
+    width: 100%;
+        .col {
+            flex-basis: 0;
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+    }
 }

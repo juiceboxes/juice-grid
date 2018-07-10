@@ -1,8 +1,8 @@
 {
   "name": "@juiceboxes/juice-grid",
-  "version": "0.1.1",
+  "version": "0.3.1",
   "private": false,
-  "description": "Lightweight, simple, CSS grid",
+  "description": "A lightweight, simple, grid system using CSS Grid OR flexbox",
   "main": "index.js",
   "scripts": {
     "test": "npm run build",
@@ -24,7 +24,10 @@
     "css",
     "grid",
     "sass",
-    "cssgrid"
+    "cssgrid",
+    "flexbox",
+    "flex",
+    "flexbox-grid"
   ],
   "author": "https://github.com/ryelo",
   "license": "MIT",
