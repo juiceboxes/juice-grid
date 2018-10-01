@@ -1,4 +1,6 @@
-http://img.badgesize.io/juiceboxes/juice-grid/juice-grid.min.css.svg
+
+![Grid Size](https://img.shields.io/github/size/juiceboxes/juice-grid/juice-grid.min.css.svg)
+![Travis](https://img.shields.io/travis/juiceboxes/juice-grid.svg)
 
 # Juiceboxes/juice-grid
 
